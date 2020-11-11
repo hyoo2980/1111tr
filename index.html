@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-entity
+            position="1 -1 0"
+            animation-mixer scale="0.5 0.5 0.5"
+            rotation="90 180 0"
+            gltf-model="./eggy/scene.glb"
+            ></a-entity>
+            <a-entity
+            position="0.5 -1 0"
+            animation-mixer scale="0.7 0.7 0.7"
+            rotation="90 180 0"
+            gltf-model="./eggy/scene.glb"
+            ></a-entity>
+            <a-entity
+            position="1.5 -1 0"
+            animation-mixer scale="0.4 0.4 0.4"
+            rotation="90 180 0"
+            gltf-model="./eggy/scene.glb"
+            ></a-entity>
+            <a-entity
+            position="0 -1 0"
+            animation-mixer scale="1 1 1"
+            rotation="90 180 0"
+            gltf-model="./eggy/scene.glb"
+            ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
